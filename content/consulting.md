@@ -21,7 +21,7 @@ building multi-disciplinary software teams. I will work with your leadership to
 take a product from idea to production, developing the tools and team to manage
 its lifecycle and drive continued innovation and user-satisfaction.
 
-# Expert Coding Services
+# Expert Software Development Services
 
 I am and always will be *passionate* about coding. I learned to read between
 Dr. Seuss and the TI-99/4A BASIC example programs (my dad was also a tech nut

@@ -12,10 +12,10 @@
 # For developpers, if you modify this theme, put your images in `source/images` folder and
 # use grunt task `build` to synchronize assets
 
-baseurl = "https://jeffersonheard.github.io"
+baseurl = "https://jeffersonheard.github.io/"
 languageCode = "en-us"
 title = "Jefferson Heard"
-theme = "hugo-tranquilpeak-theme"
+theme = "hugo-strata-theme"
 DisqusShortname = "jeffersonheard-github-io"
 googleAnalytics = "UA-68674847-2"
 Paginate = 7
@@ -33,7 +33,7 @@ canonifyurls = true
   name = "Jefferson Heard"
   bio = "Technologist, CTO, experimental cook, hiker"
   job = "CTO, [365 Pronto](https://www.365pronto.com)"
-  location = "France"
+  location = "NC USA"
   # Your Gravatar email. Overwrite `author.picture` everywhere in the blog
   # gravatar_email = "jefferson.r.heard@gmail.com"
   # Your profile picture
@@ -49,70 +49,51 @@ canonifyurls = true
   weight = 0
   identifier = "home"
   name = "Home"
-  pre = "<i class=\"sidebar-button-icon fa fa-lg fa-home\"></i>"
   url = "/"
 
 [[menu.main]]
-  weight = 1
-  identifier = "categories"
-  name = "Categories"
-  pre = "<i class=\"sidebar-button-icon fa fa-lg fa-bookmark\"></i>"
-  url = "/categories"
-[[menu.main]]
   weight = 2
-  identifier = "tags"
-  name = "Tags"
-  pre = "<i class=\"sidebar-button-icon fa fa-lg fa-tags\"></i>"
-  url = "/tags"
-# [[menu.main]]
-#   weight = 3
-#   identifier = "archives"
-#   name = "Archives"
-#   pre = "<i class=\"sidebar-button-icon fa fa-lg fa-archive\"></i>"
-#   url = "/archives"
+  identifier = "blog"
+  name = "Blog"
+  url = "/post"
 
 [[menu.main]]
-  weight = 4
+  weight = 1
   identifier = "about"
   name = "About"
-  pre = "<i class=\"sidebar-button-icon fa fa-lg fa-question\"></i>"
   url = "/about"
 
-[[menu.links]]
-  weight = 1
-  identifier = "github"
-  name = "GitHub"
-  pre = "<i class=\"sidebar-button-icon fa fa-lg fa-github\"></i>"
-  url = "https://github.com/jeffersonheard"
-
-[[menu.links]]
-  weight = 0
-  identifier = "linkedin"
-  name = "LinkedIn"
-  pre = "<i class=\"sidebar-button-icon fa fa-lg fa-linkedin\"></i>"
-  url = "https://www.linkedin.com/in/jeffersonheard"
-
 [[menu.misc]]
-  weight = 4
+  weight = 3
   identifier = "consulting"
   name = "Consulting"
-  pre = "<i class=\"sidebar-button-icon fa fa-lg fa-briefcase\"></i>"
   url = "/consulting"
 
-[[menu.links]]
-  weight = 2
+[[menu.main]]
+  weight = 4
+  identifier = "resume"
+  name = "Resume"
+  url = "/resume.pdf"
+
+[[menu.main]]
+  weight = 5
+  identifier = "cv"
+  name = "CV"
+  url = "/cv.pdf"
+
+[[menu.main]]
+  weight = 7
   identifier = "sondra"
   name = "Sondra Docs"
   pre = "<i class=\"sidebar-button-icon fa fa-lg fa-github\"></i>"
   url = "https://jeffersonheard.github.io/sondra"
 
-[[menu.misc]]
-  weight = 2
+[[menu.main]]
+  weight = 6
   identifier = "pronto"
   name = "365 Pronto"
   pre = "<i class=\"sidebar-button-icon fa fa-lg fa-briefcase\"></i>"
   url = "https://www.365pronto.com"
-
 
 
 [params]
@@ -124,53 +105,109 @@ canonifyurls = true
 
   hierarchical_categories = false
 
+  date_format = "2006-01-02"
+
   description = "Personal and professional website of Jefferson Heard"
 
-  # Customization
-  # Define the behavior of the sidebar
-  # 1: Display extra large sidebar on extra large screen, large sidebar on large screen,
-  #    medium sidebar on medium screen and header bar on small screen and
-  # extra large sidebar is swiped on extra large screen and large sidebar on all lower screen (default)
-  # 2: Display large sidebar on large screen, medium sidebar on medium screen and
-  #    header bar on small screen and large sidebar is swiped
-  # 3: Display medium sidebar on large and medium screen and header bar on small screen and
-  #    medium sidebar is swiped
-  # 4: Display header bar on all screens, extra large sidebar is swiped on extra large screen and
-  #    large sidebar is swiped on all lower screens
-  # 5: Display header bar on all screens and large sidebar is swiped on large screen
-  # 6: Display header bar on all screens and medium sidebar is swiped
-  sidebar_behavior = 1
+  [params.about]
+		hide  = false
+		title = "Versatile data scientist and software consultant specializing in collaboration tools, APIs, geospatial data, and visualization."
+		content = '''### Solutions
 
-  # Your blog cover picture. I STRONGLY recommend you to use a CDN to speed up loading of pages.
-  # There is many free CDN like Cloudinary or you can also use indirectly
-  # by using services like Google Photos.
-  # Current image is on AWS S3 and delivered by AWS CloudFront.
-  # Otherwise put your image in folder `static/_images/` (development)  or in `source/assets/images/` if you can't or don't want to build the theme,
-  # and use relative url : `your-image.png`
-  cover_image = "cover-blueridge-4.jpg"
+<span class="callout">Interactive, custom web-mapping makes your mobile-based app stand out from the crowd.</span>
+I can take your data and make it sing to your customers. My solutions are scalable and
+work on your website, in your mobile app, or in your application.
 
-  # Display an image gallery at the end of a post which have photos variables (false: disabled, true: enabled)
-  image_gallery = true
+<span class="callout">Custom data science for business insights and academic work.</span> I can take complex data and methods and turn them into code and analysis for repeatable, high-performance insights.
 
-  # Display thumbnail image of each post on index pages (false: disabled, true: enabled)
-  thumbnail_image = true
-  # Display thumbnail image at the right of title in index pages (`right`, `left` or `bottom`)
-  # Set this value to `right` if you have old posts to keep the old style on them
-  # and define `thumbnailImagePosition` on a post to overwrite this setting
-  thumbnail_image_position = "bottom"
-  # Automatically select the cover image or the first photo from the gallery of a post if there is no thumbnail image as the thumbnail image
-  # Set this value to `true` if you have old posts that use the cover image or the first photo as the thumbnail image
-  # and set `autoThumbnailImage` to `false` on a post to overwrite this setting
-  auto_thumbnail_image = true
+<span class="callout">Customized open-source collaboration tools.</span> I can make your data accessible and open to your team and to far-flung colleagues using open source tools for information, knowledge management, and deeply customized content sharing.
 
-  # Header configuration
-  # The link at the right of the header is customizable
-  # You can add a link (as an icon) at the right of the header instead of the author's gravatar image or author's picture.
-  # By default, author's gravatar or author's picture is displayed.
-  #     url: /#search
-  #     icon: search
-  #     class: st-search-show-outputs
-  [params.header.right_link]
-    class = ""
-    icon = ""
-    url = "/about"
+### Testimonials
+
+>Jeff understood quickly what we wanted, scrubbed our messy data, and produced a custom map that was exactly what we wanted--and on time.
+**(Lisa Chensvold. Director of Communications [International Executive Service Corps](http://www.iesc.org)**)
+'''
+
+
+	[params.portfolio]
+		hide  = false
+		title = "Project Portfolio"
+
+		# The images and thumbnails are stored under static/images
+		# Create and change subfolders as you like
+		[[params.portfolio.gallery]]
+			image = "fulls/lebanon.pdf"
+			thumb = "thumbs/lebanon.png"
+			title = "Financial Inclusion in Lebanon."
+			description = """**Client:** International Executive Service Corps. http://iesc.org.
+
+  **Task:** Create a publication quality map that shows the current distribution of microfinance institutions in Lebanon, for the purposes of presenting to a granting body. **(2016)**
+
+  **Reference Contact:** [Lisa Chensvold. Director of Communications](https://www.linkedin.com/in/lisachensvold)."""
+
+		[[params.portfolio.gallery]]
+			link = "https://jeffersonheard.github.io/sondra"
+			thumb = "thumbs/sondra.svg"
+			title = "Sondra."
+			description = "An ORM and API generator for RethinkDB, Python 3, and Flask."
+
+		[[params.portfolio.gallery]]
+			link = "https://github.com/jeffersonheard/terrapyn"
+			thumb = "thumbs/terrapyn.png"
+			title = "Terrapyn Geospatial CMS."
+			description = "An Open Source CMS and API for geospatial data, built using Python, Django, and Open Source geospatial tools."
+
+		[[params.portfolio.gallery]]
+			link = "https://hydroshare.org"
+			thumb = "thumbs/hydroshare.png"
+      title = "Hydroshare (project technical lead while at RENCI)."
+			description = "An Open Source CMS and API for hydrological data."
+
+  [params.sidebar]
+    # Replace the avatar with a picture of your own under static/images
+    avatar = "portrait.jpg"
+    # Use Markdown to format the string. This works nearly all over the theme
+    bio = "**CTO & Data Science Consultant**"
+    # The icons will be shown if you enter your username
+    twitter = "jeffersonheard"
+    github = "jeffersonheard"
+    dribbble = ""
+    facebook = ""
+    googleplus = ""
+    flickr = ""
+    linkedin = "https://linkedin.com/injeffersonheard"
+
+    copyright = [
+      "&copy; 2016 Jefferson Heard",
+
+    ]
+
+  [params.recentposts]
+		hide  = false
+		title = "Recent blog posts"
+
+	[params.contact]
+		hide  = false
+		title = "Contact me about consulting, interviews, or talks"
+		content = "I am available for consulting, talks, and short-courses on mapping, geography, and open source software. For more information about what I do, <a href='consulting'>see my consulting page</a>."
+
+		# Since this template is static, the contact form uses www.formspree.io as a
+		# proxy. The form makes a POST request to their servers to send the actual
+		# email. Visitors can send up to a 1000 emails each month for free.
+	    #
+	    # What you need to do for the setup?
+	    #
+	    # - set your email address under 'email' below
+	    # - upload the generated site to your server
+	    # - send a dummy email yourself to confirm your account
+	    # - click the confirm link in the email from www.formspree.io
+	    # - you're done. Happy mailing!
+		email = "jefferson.r.heard@gmail.com"
+
+		[params.contact.form]
+			# Set custom strings for the form if your native
+			# language isn't English
+			name = "Your name"
+			email = "Your email"
+			message = "Ask me a question!"
+			submit = "Send"

@@ -1,9 +1,9 @@
 ---
-title: "Recipes: Lemongrass Curry Soup"
+title: "Saturday Night Dinners: Lemongrass Curry Soup"
 metaAlignment: center
 coverMeta: out
-date: 2016-11-25
-draft: true
+date: 2016-12-02
+draft: false
 categories:
 - personal
 tags:
@@ -12,11 +12,12 @@ tags:
 - experiments
 ---
 
-I was going for something Thai-ish without following any particular recipe.
-What I came out with was pretty incredible.   Use a fairly light vegetable broth
-for this recipe: either a miso broth or I use the Swanson's organic vegetable
-broth.  The taste of this one is at once hearty and very very full of Spring.
-The whole thing took about 35 minutes from start to finish.
+I was going for something Thai-ish without following any particular recipe. What
+I came out with was pretty incredible. A lot like Tom Kha, but not exactly.  Use
+a fairly light vegetable broth for this recipe: either a miso broth or I use the
+Swanson's organic vegetable broth.  The taste of this one is at once hearty and
+very very full of Spring. The whole thing took about 35 minutes from start to
+finish.
 
 - 1 tbl massaman curry paste or 1/2tbl red curry paste
 - 2 tbl olive oil

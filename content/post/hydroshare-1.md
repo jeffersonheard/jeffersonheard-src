@@ -98,14 +98,14 @@ the retooling.
 
 The keys to this success were:
 
-* **Use distributed project management tools __effectively__**. (I stress the
+*   **Use distributed project management tools __effectively__**. (I stress the
   word "effectively" because for a time we over-used these tools and leaned on
-  them too heavily, exaggerating their weaknesses as well as their strengths.  
+  them too heavily, exaggerating their weaknesses as well as their strengths.
 
-* **Use the overlap** between the knowledge our developers already had through
-  their domain work, and the needs of full-stack software development.**  
+*   **Use the overlap** between the knowledge our developers already had through
+  their domain work, and the needs of full-stack software development.**
 
-* **Spend in-person time wisely**, on training and "code crunches" based around
+*   **Spend in-person time wisely**, on training and "code crunches" based around
   features or details that require lots of coordination.
 
 Not that we got all of that right. In particular, the last part was hard to get
@@ -123,12 +123,12 @@ We used a number of project management tools meant for Agile development. I have
 to say I was not that fond of any of them. In the end, I think our best toolset
 was a combination of:
 
-* List building on [Trello](https://www.trello.com)
+*  List building on [Trello](https://www.trello.com)
 
-* A shared document and discussion space. We used Drive and Google Docs, but now
+*  A shared document and discussion space. We used Drive and Google Docs, but now
   that Slack is around I'd probably choose that.
 
-* A weekly developer meeting separate from the management meeting, where all
+*  A weekly developer meeting separate from the management meeting, where all
   questions were fair game, and managers didn't have to feel anxious about the
   "sausage making"
 
