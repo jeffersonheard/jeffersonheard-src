@@ -82,13 +82,6 @@ canonifyurls = true
   url = "/cv.pdf"
 
 [[menu.main]]
-  weight = 7
-  identifier = "sondra"
-  name = "Sondra Docs"
-  pre = "<i class=\"sidebar-button-icon fa fa-lg fa-github\"></i>"
-  url = "https://jeffersonheard.github.io/sondra"
-
-[[menu.main]]
   weight = 6
   identifier = "pronto"
   name = "365 Pronto"

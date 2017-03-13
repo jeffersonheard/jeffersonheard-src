@@ -2778,15 +2778,11 @@ Now a quick sanity check to make sure our addresses work.
 print(next(iter(tax_bills_bbls_sample['address'])))
 geocoder = Nominatim()
 geocoder.geocode(next(iter(tax_bills_bbls_sample['address'])))
-
 ```
 
+##### Output
+
     3157  35TH ST. NY 11106
-
-
-
-
-
     Location(35th Street, Astoria, Queens County, NYC, New York, 11101, United States of America, (40.7628959, -73.9202263, 0.0))
 
 
